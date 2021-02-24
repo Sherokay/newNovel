@@ -1,30 +1,49 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <button id="top" v-show="display" @click="toTop" class="iconfont icon-shang"></button>
   <router-view/>
 </template>
 
+<script>
+export default {
+  data: function () {
+    return {
+      display: false
+    }
+  },
+  mounted: function () {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > window.innerHeight) {
+        this.display = true
+      } else {
+        this.display = false
+      }
+    })
+  },
+  methods: {
+    toTop () {
+      window.scrollTo(0, 0)
+    }
+  }
+}
+</script>
+
 <style>
+#top {
+  z-index: 1;
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .3);
+  border: 0;
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
