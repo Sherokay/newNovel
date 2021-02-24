@@ -34,7 +34,7 @@
       </section>
       <section>
         <h3>女频精选</h3>
-        <span @click="toRank('women')">更多></span>
+        <span @click="toRank('woman')">更多></span>
         <book-list :booklist="fminfoList" @tothisbook="toThisBook($event)"/>
       </section>
       <section>
