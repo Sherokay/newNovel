@@ -24,8 +24,8 @@ const getters = {
 }
 
 const actions = {
-  getCategoriesList ({ commit }) {
-    return getCategories()
+  async getCategoriesList ({ commit }) {
+    return await getCategories()
       .then(res => {
         if (res.data.ok) {
           commit('setMaleList', res.data.male)

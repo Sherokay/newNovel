@@ -77,14 +77,13 @@ export default {
     } else {
       this.rindex = 0
     }
-    this.getCategoriesList()
-    setTimeout(() => {
+    this.getCategoriesList().then(() => {
       if (sex) {
         this.manRank()
       } else {
         this.womanRank()
       }
-    }, 500)
+    })
   }
 }
 </script>
