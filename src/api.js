@@ -10,7 +10,7 @@ export async function searchByAuthor (author) {
 }
 // 3.搜索分类
 export async function searchByFictionType (fictionType) {
-  return await axios.get('/api/fiction/search/fictionType/' + fictionType)
+  return await axios.get('/api/fiction/search/fictionType/' + fictionType + '/1/50')
 }
 // 4.搜索章节
 export async function searchChapter (chapter) {

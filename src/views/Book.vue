@@ -81,17 +81,12 @@ export default {
         this.$router.push('/directory')
         window.scrollTo(0, 0)
         this.setScrool(0)
-        this.setReverse(false)
       }
     }
   },
   mounted () {
-    var fId = this.$route.params.fId
-    if (fId) {
-      this.setFictionId(fId)
-    } else {
-      this.setFictionId(this.getBookInfo.fictionId)
-    }
+    this.setFictionId(this.getBookInfo.fictionId)
+    this.setReverse(false)
     this.searchDirectory()
   }
 }

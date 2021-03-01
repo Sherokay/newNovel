@@ -12,7 +12,7 @@
       <router-link to="/search" class="iconfont icon-sousuo" >搜索</router-link>
     </div>
     <nav>
-      <router-link to="/">
+      <router-link to="/category">
         <i class="iconfont icon-fenlei1"></i>
         <span>分类</span>
       </router-link>

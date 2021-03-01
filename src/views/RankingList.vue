@@ -44,7 +44,7 @@ export default {
     ...mapGetters(['getMaleList', 'getFemaleList'])
   },
   methods: {
-    ...mapActions(['getCategoriesList']),
+    ...mapActions(['getRankingList']),
     manRank () {
       this.flag = true
       this.rankList = this.getMaleList
@@ -77,7 +77,7 @@ export default {
     } else {
       this.rindex = 0
     }
-    this.getCategoriesList().then(() => {
+    this.getRankingList().then(() => {
       if (sex) {
         this.manRank()
       } else {

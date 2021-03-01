@@ -48,6 +48,7 @@ img {
 h4 {
   font-size: 1rem;
   overflow: hidden;
+  width: 9rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;

@@ -4,6 +4,7 @@ import book from './modules/book'
 import bookshelf from './modules/bookshelf'
 import ranklist from './modules/ranklist'
 import directory from './modules/directory'
+import category from './modules/category'
 export default createStore({
   state: {
   },
@@ -16,6 +17,7 @@ export default createStore({
     book,
     bookshelf,
     ranklist,
-    directory
+    directory,
+    category
   }
 })

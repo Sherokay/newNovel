@@ -24,7 +24,7 @@ const getters = {
 }
 
 const actions = {
-  async getCategoriesList ({ commit }) {
+  async getRankingList ({ commit }) {
     return await getCategories()
       .then(res => {
         if (res.data.ok) {
