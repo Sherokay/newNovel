@@ -22,9 +22,9 @@ export async function searchContent (content) {
 }
 // 获取排名详情
 export async function getRankinfo (id) {
-  return await axios.get('/rapi/rank/' + id)
+  return await axios.get('/rapi/ranking/' + id)
 }
 // 获取排行榜
 export async function getCategories () {
-  return await axios.get('/rapi/rank-category')
+  return await axios.get('/rapi/ranking/gender')
 }

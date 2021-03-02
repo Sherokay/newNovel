@@ -89,20 +89,19 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.bar {
+.rankinglist .navbar {
   padding: 0.5rem 1rem;
   background-color: #fff;
-  h2 {
-    padding-left: 0;
-  }
 }
 .sex {
   position: absolute;
-  top: 0.8rem;
+  top: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
   span {
     font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
     font-weight: 600;
     &:last-child {
       margin-left: 0.5rem;

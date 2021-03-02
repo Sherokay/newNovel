@@ -52,7 +52,6 @@ export default {
     width: 100%;
     height: 2rem;
     line-height: 2rem;
-    padding-left: 1rem;
     text-align: left;
     font-size: 0.9rem;
     font-weight: 500;

@@ -20,7 +20,7 @@
         <i class="iconfont icon-paihangbang1"></i>
         <span>排行榜</span>
       </router-link>
-      <router-link to="/">
+      <router-link to="/" @click="comming">
         <i class="iconfont icon-tupian1"></i>
         <span>漫画</span>
       </router-link>
@@ -104,6 +104,9 @@ export default {
       } else {
         this.$router.push({ name: 'RankingList', params: { sex: 0, rindex: 11 } })
       }
+    },
+    comming () {
+      alert('正在开发……')
     }
   }
 }

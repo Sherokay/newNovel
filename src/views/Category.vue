@@ -27,16 +27,16 @@ export default {
   data () {
     return {
       clist: [
-        { title: '都市' },
+        { title: '修真' },
         { title: '穿越' },
         { title: '科幻' },
         { title: '网游' },
         { title: '玄幻' },
-        { title: '修真' },
+        { title: '都市' },
         { title: '言情' },
         { title: '历史' },
-        { title: '其他' },
-        { title: '竞技' }
+        { title: '竞技' },
+        { title: '其他' }
       ],
       cindex: Number,
       bookList: [],
@@ -60,6 +60,7 @@ export default {
     ...mapGetters(['getCateList'])
   },
   mounted () {
+    window.scrollTo(0, 0)
     this.toThisCate(0)
     this.getCategoriesList()
   }
@@ -67,12 +68,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.bar {
+.category .navbar {
   padding: 0.5rem 1rem;
   background-color: #fff;
-  h2 {
-    padding-left: 0;
-  }
 }
 article {
   display: flex;

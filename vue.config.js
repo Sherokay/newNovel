@@ -9,7 +9,7 @@ module.exports = {
         pathRewrite: { '^/api': '' }
       },
       '/rapi': {
-        target: 'http://novel.kele8.cn',
+        target: 'http://api.zhuishushenqi.com',
         ws: true,
         changeOrigin: true,
         pathRewrite: { '^/rapi': '' }
